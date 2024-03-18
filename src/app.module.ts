@@ -7,7 +7,8 @@ import { UnsplashController } from "./unsplash/unsplash.controller";
 import { UnsplashModule } from "./unsplash/unsplash.module";
 import { UnsplashService } from "./unsplash/unsplash.service";
 import { UsersModule } from "./users/users.module";
-
+import * as dotenv from "dotenv";
+dotenv.config();
 @Module({
   imports: [MongooseModule.forRoot(process.env.MONGODB_URI), UsersModule, AuthModule, UnsplashModule, FilesModule],
   controllers: [UnsplashController],

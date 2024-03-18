@@ -2,10 +2,9 @@ import { NestFactory } from "@nestjs/core";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 import { AppModule } from "./app.module";
 import * as dotenv from "dotenv";
+dotenv.config();
 async function bootstrap() {
-  dotenv.config();
   const app = await NestFactory.create(AppModule);
-  console.log(process.env.AWS_S3_BUCKET_NAME);
 
   const config = new DocumentBuilder()
     .setTitle("File Management API")

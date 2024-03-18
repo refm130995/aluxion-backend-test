@@ -38,7 +38,6 @@ describe("UnsplashController", () => {
   it("should upload image to S3 and return success message", async () => {
     const body = { query: "cats", bucketName: process.env.AWS_S3_BUCKET_NAME, fileName: "cat.jpg" };
     const result = await controller.uploadUnsplashImageToS3(body);
-    console.log();
     expect(result).toBeDefined();
     expect(result.message).toEqual("Image uploaded successfully to S3");
     expect(result.imageUrl).toBeDefined();

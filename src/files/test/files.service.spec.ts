@@ -61,7 +61,6 @@ describe('FilesService', () => {
             const fileName = 'test.txt';
 
             const result = await filesService.getSignedUrl(bucketName, fileName);
-            console.log(result);
             expect(result).toBeDefined();
         });
     });
