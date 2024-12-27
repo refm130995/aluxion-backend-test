@@ -13,7 +13,7 @@ Este proyecto es una prueba backend realizada en NestJS para la empresa Aluxion,
 ### Sin Docker
 
 1. Clona el repositorio:
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/tu-usuario/[aluxion-backend-test.git](https://github.com/refm130995/aluxion-backend-test)
 
 2. Navega hasta el directorio del proyecto:
 cd aluxion-backend-test
@@ -27,7 +27,7 @@ npm run start
 ### Con Docker
 
 1. Clona el repositorio:
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/tu-usuario/[aluxion-backend-test.git](https://github.com/refm130995/aluxion-backend-test)
 
 2. Navega hasta el directorio del proyecto:
 cd aluxion-backend-test
